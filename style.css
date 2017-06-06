@@ -87,5 +87,6 @@ th{
 	justify-content: space-around;
 }
 .img-site{
+	border-radius: 30%;
 	background: white;
 }
