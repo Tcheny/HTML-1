@@ -1,12 +1,21 @@
 body {
-	background: url("http://iwallpapers2.free.fr/images/Photographie/Black_Collection/Bois_sombre_Texture_1920x1080.jpg");
+	background: url("background.jpg");
 	color: #ffffff;
   margin: auto;
   width: 80%;
   font-family: 'Open Sans', sans-serif;
-
 }
-.portrait{
+@keyframes tossing {
+	0% {transform: rotate(-2deg);}
+	50% {transform: rotate(2deg);}
+	100% {transform: rotate(-2deg);}
+}
+.tossing{
+	animation-name: tossing;
+	animation-duration: 3.5s;
+	animation-iteration-count: infinite;
+}
+.tossing{
   height: 190px;
   width: 180px;
   border: 1px solid black;
@@ -19,21 +28,23 @@ header{
   align-items: center;
 }
 .entete{
-  color: #E08283;
-  font-size: 1.5em;
+  color: #82b9e0;
+  font-size: 1em;
   font-family: 'Varela', sans-serif;
 }
 nav{
-  border: 1px solid white;
-  border-radius: 30px;
-	width: 100%;
-	padding: 10px 0px 10px 0px;
-  margin: 10px 40px 10px 0px;
+	display: flex;
+	flex-direction: column;
+  position: fixed;
+  left: 0px;
+	padding: 10px;
+	background-color: rgba(15, 54, 142, 0.54);
+	border: 2px solid rgb(78, 55, 67);
+	border-radius: 40px;
 }
 li{
 	display: block;
 	line-height: 200%;
-
 }
 a:visited{
   color: rgb(115, 26, 215);
@@ -41,30 +52,40 @@ a:visited{
 a:hover{
 	color: rgba(195, 49, 230, 0.31);
 }
-.titre{
+h2{
 	text-decoration: underline;
+	text-align: center;
+	margin: 30px 0px 40px 0px;
 	color: #BE90D4;
 }
 p{
-  line-height: 120%;
+	margin: 0px 60px 0px 60px;
+  line-height: 130%;
   font-size: 1.1em;
 }
 #fusion{
   display: flex;
   align-items: center;
 }
-table, th, td{
-  border-collapse: collapse;
+table, tr, th, td{
   border: 2px solid rgb(122, 191, 213);
   padding: 5px 5px;
   margin: auto;
   margin-top: 40px;
 }
+th{
+	background-color: rgba(46, 30, 250, 0.48);
+}
 .code-die{
-	padding: 50px;
 	width: 600px;
 	height: 500px;
 	display: block;
   margin: auto;
-
+}
+.liens{
+	display: flex;
+	justify-content: space-around;
+}
+.img-site{
+	background: white;
 }

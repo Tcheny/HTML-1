@@ -5,20 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
-  <title>HTML #1</title>
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela" rel="stylesheet">
+
+  <title>HTML #1</title>
 </head>
 <body>
 
+
   <!--entete-->
-  <header>
+  <header id="home">
       <div>
-          <img class="portrait" src="https://a248.e.akamai.net/secure.meetupstatic.com/photos/member/a/7/highres_264960167.jpeg" alt="moi">
+          <img class="tossing" src="portrait.jpeg" alt="moi">
       </div>
       <div class="entete">
-          <h2>Eugénie BE</h2>
-          <h3>92230 Gennevilliers</h3>
+          <h1>Eugénie BE</h2>
+          <h3>FRANCE</h3>
       </div>
   </header>
   <!--fin header-->
@@ -26,29 +28,31 @@
 <!--ligne-->
 <hr>
 
-<!--Lien sociaux-->
-<div id="fusion">
-<nav>
-  <ul>
-    <li><a href="https://github.com/Tcheny"><i class="fa fa-github fa-2x"></i>Github</a></li>
-    <li><a href="https://twitter.com/tcheny_b"><i class="fa fa-twitter fa-2x"></i>Twitter</a></li>
-    <li><a href="https://www.freecodecamp.com/fcc1f66b3c9"><i class="fa fa-free-code-camp fa-2x"></i>Free code camp</a></li>
-  </ul>
-</nav>
-<!--fin liens-->
+<!--navigation-->
+  <nav class='stretchRight'>
+    <h4>Menu</h4>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#header">Qui suis-je ?</a></li>
+      <li><a href="#serie">Mes Séries</a></li>
+      <li><a href="#contact">Mes Réseaux</a></li>
+    </ul>
+  </nav>
+<!--fin navigation-->
 
 <!--Présentation-->
 <section>
-  <h2 class="titre">Qui suis-je ?</h2>
+  <h2 id="header">Qui suis-je ?</h2>
   <p>
-    J'ai 29 ans et je suis actuellement en formation chez Simplon!
+    J'ai 29 ans et je suis actuellement en formation développeur web Fullstack JS à Simplon.co! 7 mois intensif puis à la suite de cette formation je souhaiterai faire un contrat de professionnalisation de 13 mois pour avoir 1 année d'expérience avant de me de me vendre dans le des grands.
   </p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p>
+
 </section>
-</div>
+
 <!--fin présentation-->
 
+<!--tableau-->
+<h2 id="serie">Mes séries préférées</h2>
   <table style="width:80%">
   <tr>
     <th>Séries</th>
@@ -56,27 +60,33 @@
   </tr>
   <tr>
     <td>Big Bang Theory</td>
-    <td>Coper Sheldon</td>
+    <td>Sheldon Cooper</td>
   </tr>
   <tr>
     <td>Esprit Criminel</td>
-    <td>Reid Spencer</td>
+    <td>Spencer Reid</td>
   </tr>
   <tr>
     <td>Orange is the new Black</td>
-    <td>Vause Alex</td>
+    <td>Alex Vause</td>
   </tr>
   <tr>
     <td>Nikita</td>
-    <td>Seymour Birkhoff</td>
+    <td>Birkhoff Seymour</td>
   </tr>
 </table>
+<!--fin tableau-->
 
-<footer>
-  <img class=" code-die" src="https://i2.wp.com/learnoutlive.com/wp-content/uploads/2013/02/laptop.jpg?w=1024">
-</footer>
+<!--Image-->
+<h2>Code or Die</h2>
+  <img class=" code-die" src="code-die.jpg">
 
-
-
+<!--Réseaux-->
+<h2 id="contact">Mes réseaux sociaux</h2>
+  <div class="liens">
+    <a href="https://github.com/Tcheny"><img class="img-site" src="github.png" alt=""></a>
+    <a href="https://twitter.com/tcheny_b"><img class="img-site" src="twitter.png" alt=""></a>
+    <a href="https://www.freecodecamp.com/fcc1f66b3c9"><img class="img-site" src="fcc.png" alt=""></a>
+  </div class="liens">
 </body>
 </html>
