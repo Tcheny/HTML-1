@@ -1,6 +1,6 @@
 body {
 	background: url("Images/background.jpg");
-	color: #ffffff;
+
   margin: auto;
   width: 80%;
   font-family: 'Open Sans', sans-serif;
@@ -81,7 +81,7 @@ header{
   align-items: center;
 }
 .entete{
-  color: #82b9e0;
+  color: #8C3520;
   font-size: 1em;
   font-family: 'Varela', sans-serif;
 }
@@ -95,9 +95,9 @@ nav{
   position: fixed;
   left: 0px;
 	padding: 10px;
-	background-color: rgba(15, 54, 142, 0.54);
-	border: 2px solid rgb(78, 55, 67);
-	border-radius: 40px;
+	background-color: rgba(255, 255, 255, 0.28);
+	border: 1px solid rgb(78, 55, 67);
+	border-radius: 30px;
 }
 .stretchRight{
 	animation-name: stretchRight;
@@ -139,19 +139,21 @@ nav{
 }
 li{
 	display: block;
-	line-height: 200%;
+	line-height: 160%;
 }
 a:visited{
-  color: rgb(115, 26, 215);
+  color: rgb(0, 0, 0);
 }
 a:hover{
-	color: rgba(195, 49, 230, 0.31);
+	color: rgb(222, 30, 30);
 }
 h2{
 	text-decoration: underline;
 	text-align: center;
-	margin: 60px 0px 60px 0px;
-	color: #BE90D4;
+
+	margin: 50px 0px 50px 0px;
+
+	color: #352328;
 }
 p{
 	margin: 0px 60px 20px 60px;
@@ -163,13 +165,16 @@ p{
   align-items: center;
 }
 table, tr, th, td{
-  border: 2px solid rgb(122, 191, 213);
+  border: 2px solid black;
   padding: 5px 5px;
   margin: auto;
   margin-top: 40px;
 }
 th{
-	background-color: rgba(46, 30, 250, 0.48);
+	background-color: rgba(246, 243, 237, 0.44);
+}
+table{
+	background-color: rgba(95, 99, 96, 0.24);
 }
 .code-die{
 	width: 600px;
@@ -177,35 +182,16 @@ th{
 	display: block;
   margin: auto;
 }
-.liens{
-	display: flex;
-	justify-content: space-around;
+.text-center{
+  text-align: center;
 }
-
-.img-site{
-	border-radius: 30%;
-	background: white;
+.list{
+  padding-left: 0;
 }
-
-.floating{
-	animation-name: floating;
-	-webkit-animation-name: floating;
-
-	animation-duration: 1.5s;
-	-webkit-animation-duration: 1.5s;
-
-	animation-iteration-count: infinite;
-	-webkit-animation-iteration-count: infinite;
+.list li {
+  display: inline-block;
+  padding: 40px;
 }
-
-@keyframes floating {
-	0% {
-		transform: translateY(0%);
-	}
-	50% {
-		transform: translateY(8%);
-	}
-	100% {
-		transform: translateY(0%);
-	}
+.list li i{
+  font-size: 30px;
 }
